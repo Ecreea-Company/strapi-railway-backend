@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "recursos_blogs",
+  "info": {
+    "singularName": "recursos-blog",
+    "pluralName": "recursos-blogs",
+    "displayName": "Recursos-blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "multimedia": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
+    }
+  }
+}
