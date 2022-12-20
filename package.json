@@ -1,0 +1,45 @@
+{
+  "name": "strapi-railway",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "husky": "^8.0.2",
+    "standard": "^17.0.0"
+  },
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.5.4",
+    "@strapi/plugin-users-permissions": "4.5.4",
+    "@strapi/strapi": "4.5.4",
+    "mysql": "2.18.1"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "semi": false
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard"
+    ]
+  },
+  "author": {
+    "name": "Ecreea with Strapi"
+  },
+  "strapi": {
+    "uuid": "65956ead-3365-4c1a-b755-bf651126763f"
+  },
+  "engines": {
+    "node": ">=14.19.1 <=18.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}
