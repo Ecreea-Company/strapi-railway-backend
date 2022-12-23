@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_destecados",
+  "info": {
+    "singularName": "blog-destecado",
+    "pluralName": "blog-destecados",
+    "displayName": "Blog-Destecado"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "post": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::post.post"
+    }
+  }
+}
