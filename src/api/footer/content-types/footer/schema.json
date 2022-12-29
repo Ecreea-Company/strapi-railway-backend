@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "footers",
+  "info": {
+    "singularName": "footer",
+    "pluralName": "footers",
+    "displayName": "Footer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "list": {
+      "displayName": "List",
+      "type": "component",
+      "repeatable": true,
+      "component": "footer-layout.list",
+      "max": 4
+    }
+  }
+}
