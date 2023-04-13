@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ubicacions",
+  "info": {
+    "singularName": "ubicacion",
+    "pluralName": "ubicacions",
+    "displayName": "Ubicacion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job.job",
+      "mappedBy": "ubicacion"
+    }
+  }
+}
