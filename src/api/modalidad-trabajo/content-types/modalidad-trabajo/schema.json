@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "modalidad_trabajos",
+  "info": {
+    "singularName": "modalidad-trabajo",
+    "pluralName": "modalidad-trabajos",
+    "displayName": "Modalidad-trabajo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job.job",
+      "mappedBy": "modalidad_trabajo"
+    }
+  }
+}
