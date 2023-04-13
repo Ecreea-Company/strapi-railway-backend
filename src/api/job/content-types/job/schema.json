@@ -1,0 +1,92 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobs",
+  "info": {
+    "singularName": "job",
+    "pluralName": "jobs",
+    "displayName": "Job",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "nombre_puesto"
+    },
+    "nombre_puesto": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "text",
+      "required": true
+    },
+    "funciones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "puesto.item",
+      "required": true
+    },
+    "beneficios": {
+      "type": "component",
+      "repeatable": true,
+      "component": "puesto.item",
+      "required": true
+    },
+    "competencias": {
+      "type": "component",
+      "repeatable": true,
+      "component": "puesto.item",
+      "required": true
+    },
+    "carreras": {
+      "type": "component",
+      "repeatable": true,
+      "component": "puesto.item",
+      "required": true
+    },
+    "conocimiento_deseado": {
+      "type": "component",
+      "repeatable": true,
+      "component": "puesto.item",
+      "required": true
+    },
+    "ubicacion": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ubicacion.ubicacion",
+      "inversedBy": "jobs"
+    },
+    "tipo_contrato": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::tipo-contrato.tipo-contrato",
+      "inversedBy": "jobs"
+    },
+    "area_trabajo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::area-trabajo.area-trabajo",
+      "inversedBy": "jobs"
+    },
+    "modalidad_trabajo": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::modalidad-trabajo.modalidad-trabajo",
+      "inversedBy": "jobs"
+    },
+    "idiomas": {
+      "type": "enumeration",
+      "enum": [
+        "Español",
+        "Ingles"
+      ],
+      "required": true,
+      "default": "Español"
+    }
+  }
+}
