@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tipo_contratoes",
+  "info": {
+    "singularName": "tipo-contrato",
+    "pluralName": "tipo-contratoes",
+    "displayName": "Tipo-contrato"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job.job",
+      "mappedBy": "tipo_contrato"
+    }
+  }
+}
