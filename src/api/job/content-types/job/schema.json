@@ -87,6 +87,11 @@
       ],
       "required": true,
       "default": "Español"
+    },
+    "convocatoria_cerrada": {
+      "type": "boolean",
+      "default": false,
+      "required": true
     }
   }
 }
