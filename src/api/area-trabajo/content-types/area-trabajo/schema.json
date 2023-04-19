@@ -21,6 +21,11 @@
       "relation": "oneToMany",
       "target": "api::job.job",
       "mappedBy": "area_trabajo"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
     }
   }
 }

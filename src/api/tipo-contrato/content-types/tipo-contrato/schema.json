@@ -4,7 +4,8 @@
   "info": {
     "singularName": "tipo-contrato",
     "pluralName": "tipo-contratoes",
-    "displayName": "Tipo-contrato"
+    "displayName": "Tipo-contrato",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,6 +21,11 @@
       "relation": "oneToMany",
       "target": "api::job.job",
       "mappedBy": "tipo_contrato"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
     }
   }
 }
