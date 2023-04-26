@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "postulantes",
+  "info": {
+    "singularName": "postulante",
+    "pluralName": "postulantes",
+    "displayName": "Postulante"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "cv": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "job": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::job.job",
+      "inversedBy": "postulantes"
+    }
+  }
+}
