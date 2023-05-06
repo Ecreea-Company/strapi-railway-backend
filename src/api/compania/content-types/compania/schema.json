@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "companias",
+  "info": {
+    "singularName": "compania",
+    "pluralName": "companias",
+    "displayName": "Compania",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "jobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job.job",
+      "mappedBy": "compania"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "nombre",
+      "required": true
+    }
+  }
+}
