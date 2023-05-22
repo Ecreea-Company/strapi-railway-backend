@@ -104,6 +104,10 @@
       "relation": "manyToOne",
       "target": "api::compania.compania",
       "inversedBy": "jobs"
+    },
+    "destacado": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
