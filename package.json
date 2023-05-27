@@ -13,11 +13,11 @@
     "standard": "^17.0.0"
   },
   "dependencies": {
-    "@mattie-bundle/strapi-plugin-search": "1.0.0-alpha.3",
-    "@mattie-bundle/strapi-provider-search-algolia": "1.0.0-alpha.3",
+    "@mattie-bundle/strapi-plugin-search": "^1.0.0-alpha.3",
+    "@mattie-bundle/strapi-provider-search-algolia": "^1.0.0-alpha.3",
     "@strapi/plugin-i18n": "4.5.5",
     "@strapi/plugin-users-permissions": "4.5.5",
-    "@strapi/provider-upload-cloudinary": "4.5.5",
+    "@strapi/provider-upload-cloudinary": "^4.5.5",
     "@strapi/strapi": "4.5.5",
     "mysql": "2.18.1"
   },
