@@ -99,15 +99,19 @@
       "target": "api::postulante.postulante",
       "mappedBy": "job"
     },
-    "compania": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::compania.compania",
-      "inversedBy": "jobs"
-    },
     "destacado": {
       "type": "boolean",
       "default": false
+    },
+    "empresa": {
+      "type": "enumeration",
+      "enum": [
+        "Ecreea",
+        "E2B",
+        "Energix",
+        "Ebuilding"
+      ],
+      "required": true
     }
   }
 }
