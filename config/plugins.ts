@@ -15,12 +15,12 @@ export default ({ env }) => ({
     },
   },
   search: {
-    enabled: env.bool('SEARCH_PLUGIN', false),
+    enabled: true, //env.bool('SEARCH_PLUGIN', false),
     config: {
       provider: 'algolia',
       providerOptions: {
-        apiKey: env('ALGOLIA_PROVIDER_ADMIN_API_KEY'),
-        applicationId: env('ALGOLIA_PROVIDER_APPLICATION_ID'),
+        apiKey: 'b438ec363ec34c835279a2f298f16e3f', //env('ALGOLIA_PROVIDER_ADMIN_API_KEY'),
+        applicationId: 'AQS72RFZ2Qenv' //('ALGOLIA_PROVIDER_APPLICATION_ID'),
       },
       contentTypes: [{
         name: 'api::job.job',
